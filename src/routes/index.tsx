@@ -74,13 +74,13 @@ function Landing() {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Link
-                to="/"
-                className="glow-ring inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
-              >
-                <Zap className="h-4 w-4" />
-                Open workspace (Phase 2)
-              </Link>
+          <Link
+  to="/workspace"
+  className="glow-ring inline-flex h-11 items-center gap-2 rounded-md bg-primary px-5 text-sm font-medium text-primary-foreground transition-transform hover:scale-[1.02]"
+>
+  <Zap className="h-4 w-4" />
+  Open Workspace
+</Link>
               <a
                 href="#pillars"
                 className="inline-flex h-11 items-center rounded-md border border-border bg-surface-raised px-5 text-sm font-medium text-foreground transition-colors hover:bg-surface"
