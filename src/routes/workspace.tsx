@@ -29,29 +29,28 @@ function Workspace() {
   return (
     <div className="flex h-screen w-screen flex-col overflow-hidden bg-background text-foreground">
       <Toolbar />
-
-      <div className="flex-1 min-h-0">
+<div className="flex-1 min-h-0 overflow-hidden">
         <PanelGroup orientation="horizontal">
-          <Panel defaultSize={18} minSize={14} maxSize={30}>
+         <Panel defaultSize={15} minSize={12} maxSize={20}>
             <BlockLibraryPanel />
           </Panel>
           <VHandle />
 
-          <Panel defaultSize={58} minSize={30}>
+          <Panel defaultSize={67} minSize={50}>
             <PanelGroup orientation="vertical">
-              <Panel defaultSize={62} minSize={30}>
-                <div className="h-full w-full bg-surface-sunken">
+           <Panel defaultSize={75} minSize={45}>
+                <div className="relative h-full w-full overflow-hidden bg-surface-sunken">
                   <Canvas />
                 </div>
               </Panel>
               <HHandle />
-              <Panel defaultSize={38} minSize={15}>
+             <Panel defaultSize={25} minSize={15}>
                 <PanelGroup orientation="horizontal">
-                  <Panel defaultSize={65} minSize={30}>
+                  <Panel defaultSize={70} minSize={35}>
                     <ScopePanel />
                   </Panel>
                   <VHandle />
-                  <Panel defaultSize={35} minSize={20}>
+                 <Panel defaultSize={30} minSize={20}>
                     <ConsolePanel />
                   </Panel>
                 </PanelGroup>
@@ -60,7 +59,7 @@ function Workspace() {
           </Panel>
 
           <VHandle />
-          <Panel defaultSize={24} minSize={16} maxSize={36}>
+          <Panel defaultSize={18} minSize={14} maxSize={24}>
             <PropertyInspector />
           </Panel>
         </PanelGroup>
